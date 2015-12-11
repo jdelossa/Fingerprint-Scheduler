@@ -1,0 +1,92 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.navbar-static-top {
+	background-color: #3e7698;
+	height: 70px;
+}
+
+.navbar-static-top .navbar-header {
+	float: none;
+	margin: 10px 1px;
+}
+
+.navbar-static-top .navbar-brand, .navbar-static-top .navbar-btn {
+	color: #ffffff !important;
+}
+
+.navbar-static-top .navbar-brand {
+	font-size: 24px;
+	letter-spacing: 0.3px;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+
+.navbar-static-top .navbar-btn {
+	background: none #34617c;
+	border-color: #305870;
+	box-shadow: none;
+		-webkit-box-shadow: none;
+	padding: 8px 15px;
+	text-transform: uppercase;
+}
+
+.calendar-container {
+	/*border: solid 1px #ccc;*/
+/*	padding: 35px;
+	margin: 45px 0;*/
+}
+
+footer {
+	background-color: #3e7698;
+	height: 400px;
+	padding: 15px
+}
+footer img {
+	margin: 45px 0;
+	width: 225px;
+}
+footer a {
+	font-weight: 600;
+}
+
+footer a:hover {
+	color: #ffffff;1
+}
+footer a, footer p {
+	color: #ffffff;
+}
+
+.col-custom {
+   padding-left: 0;
+   padding-right: 0;
+}
+.col-centered {
+   float: none; 
+   margin: 0 auto;
+   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
