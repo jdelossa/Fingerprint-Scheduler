@@ -76,13 +76,6 @@
                     color: '#F3FFF8'
                   },
                   {
-                    id: '1',
-                    title: 'High Avaliability',
-                    start: '2016-01-08',
-                    rendering: 'background',
-                    color: '#F3FFF8'
-                  },
-                  {
                     id: '2',
                     title: 'Medium Avaliability',
                     start: '2016-01-11',
@@ -110,13 +103,7 @@
                     rendering: 'background',
                     color: '#f0f1db'
                   },
-                  {
-                    id: '3',
-                    title: 'Low Avaliability',
-                    start: '2016-01-15',
-                    rendering: 'background',
-                    color: '#f5cfce'
-                  },
+               
                   {
                     id: '3',
                     title: 'Low Avaliability',
@@ -146,13 +133,6 @@
                     color: '#F3FFF8'
                   },
                   {
-                    id: '1',
-                    title: 'Medium Avaliability',
-                    start: '2016-01-22',
-                    rendering: 'background',
-                    color: '#f0f1db'
-                  },
-                  {
                     id: '2',
                     title: 'Medium Avaliability',
                     start: '2016-01-25',
@@ -179,14 +159,7 @@
                     start: '2016-01-28',
                     rendering: 'background',
                     color: '#F3FFF8'
-                  },
-                  {
-                    id: '1',
-                    title: 'High Avaliability',
-                    start: '2016-01-29',
-                    rendering: 'background',
-                    color: '#F3FFF8'
-                  },
+                  }
                 ],
                 dayClick: function(date, jsEvent, view) {
                     $("#fullCalModal").modal("show");
@@ -204,8 +177,15 @@
 
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <!--[if lte IE 8]>
+          <div class="alert alert-danger" role="alert">
+            <p class="browserupgrade text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+
+            <style type="text/css">
+              .navbar-static-top img, .calendar-container { display: none; }
+              .navbar-static-top .navbar-brand { padding-left: 0; }
+            </style>
+          </div>
         <![endif]-->
     <nav class="navbar navbar-static-top" role="navigation">
       <div class="container">
@@ -286,32 +266,19 @@
                       </label>
              
                       <label>
-                        <input type="radio" name="time-selection" id="sixth" value="option6">
-                        1:00pm - 2:00pm <span class="spots-left high">(22 spots left)</span>
+                        <input type="radio" name="time-selection" id="sixth" value="option6" disabled>
+                        1:00pm - 2:00pm <span class="spots-left zero">(0 spots left)</span>
                       </label>
-            
-                      <label>
-                        <input type="radio" name="time-selection" id="seventh" value="option7">
-                        2:00pm - 3:00pm <span class="spots-left high">(35 spots left)</span>
-                      </label>
-   
-                      <label>
-                        <input type="radio" name="time-selection" id="eighth" value="option8" disabled>
-                        3:00pm - 4:00pm <span class="spots-left zero">(0 spots left)</span>
-                      </label>
-  
-                      <label>
-                        <input type="radio" name="time-selection" id="ninth" value="option9">
-                        4:00pm - 5:00pm <span class="spots-left high">(28 spots left)</span>
                       </label>
                     </div>
+                       <p>Please be aware that this is not a reservation, rather a timeframe that you will be seen at.</p>
                   </div>                 
                   <div class="vertical-line"></div>
                   <div class="col-sm-6">
                     <h4>Step 2: Verify your identity</h4>
                     <form id="form" class="verify-identity" action="#"> 
                       <div class="form-group">
-                        <label for="physician-first-name">Your First Name</label>
+                        <label for="physician-first-name" parsley-error>Your First Name</label>
                         <input type="text" min-length="2" placeholder="John" id="physician-first-name" class="form-control" required/>
                         <label for="physician-last-name">Your Last Name</label>
                         <input type="text" min-length="2" placeholder="Smith" id="physician-last-name" class="form-control" required/>
@@ -321,8 +288,6 @@
                         <input type="email" placeholder="flastname@winthrop.org" id="physician-email" class="form-control" required/>
                       </div>
                     </form>
-
-                    <p>Please be aware that this is not a reservation, rather a timeframe that you will be seen at.</p>
 
                     <input type="submit" class="btn btn-primary submit" value="Confirm"/>
                   </div>
@@ -359,7 +324,7 @@
 
           // Disable 
           $('input[type=radio][disabled]').parent().addClass('zero').css('background', '#DADADA');
-          console.log('is this working!!!!')
+          
         }); 
 
       });

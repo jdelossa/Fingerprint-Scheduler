@@ -42,8 +42,7 @@ body {
 
 /* Calendar */
 .calendar-container {
-	border: solid 1px #ccc;
-	padding: 35px;
+	padding: 0 35px;
 	margin-bottom: 20px;
 }
 .fc-ltr .fc-basic-view .fc-day-number {
@@ -69,7 +68,7 @@ body {
 	color: #145730;
 }
 .medium {
-	color: #585854;
+	color: #6B6B2F;
 }
 .low {
 	color: #a82e24;
@@ -146,7 +145,7 @@ body {
 	color: #ffffff;
 }
 .modal-body {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 .modal-body h4 {
 	color: #3e7698;
@@ -178,7 +177,6 @@ textarea.parsley-error {
     background-color: #F2DEDE;
     border: 1px solid #EED3D7;
 }
-
 .parsley-errors-list li {
     color: #B94A48;
     display: block;
