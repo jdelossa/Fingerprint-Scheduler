@@ -74,6 +74,9 @@ body {
 .low {
 	color: #a82e24;
 }
+.zero {
+	color: #909090 !important;
+}
 
 /* Modal */
 .spots-left {
@@ -125,11 +128,9 @@ body {
 .selection-radio input[type="radio"] {
   	margin-right: 10px;
 }
-
 .verify-identity label {
 	padding-top: 10px;
 }
-
 .vertical-line {
     border-left: solid 1px #ccc;
     display: initial;
@@ -144,13 +145,15 @@ body {
 .modal-title {
 	color: #ffffff;
 }
+.modal-body {
+	margin-bottom: 20px;
+}
 .modal-body h4 {
 	color: #3e7698;
 }
 .modal-body .btn-primary {
 	position: absolute;
     	right: 15px;
-    	bottom: -100px;
 }
 .modal-footer {
 	border-top: none;
@@ -235,7 +238,6 @@ footer p {
 	.modal-body .btn-primary {
 		position: static;
 			right: 0;
-			bottom: 0;
 	    float: right;
 	}
 }
